@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sansita Swashed', cursive;
+    background-color: rgb(36, 169, 221);
+}
+
+.main-container {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid wheat;
+    text-align: center;
+}
+
+.mountain {
+    display: block;
+    position: absolute;
+    width: 450px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    color: wheat;
+    font-size: 2.5 rem;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+
+.cloud1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    animation-name: cloud1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud1 {
+    0% {left: 5%; top: 10%;}
+    25% {left: 6%; top: 11%;}
+    50% {left: 5%; top: 9%;}
+    75% {left: 4%; top: 8%;}
+    100% {left: 5%; top: 10%;}
+
+}
+
+.cloud2 {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    animation-name: cloud2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud2 {
+    0% {right: 5%; top: 10%;}
+    25% {right: 6%; top: 11%;}
+    50% {right: 5%; top: 9%;}
+    75% {right: 4%; top: 8%;}
+    100% {right: 5%; top: 10%;}
+}
+
+.cloud3 {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    animation-name: cloud3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes cloud3 {
+    0% {left: 5%; top: 10%;}
+    25% {right: 7%; top: 13%;}
+    50% {right: 6%; top: 14%;}
+    75% {right: 5%; top: 15%;}
+    100% {right: 5%; top: 14%;}
+}
