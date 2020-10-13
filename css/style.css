@@ -2,6 +2,13 @@
     --background-color: rgb(100, 235, 217);
 }
 
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    LINE-HEIGHT: 1.7;
+    color: rgb(31, 29, 29);
+    padding: 2rem;
+}
 
 *{
     margin: 0;
@@ -91,6 +98,7 @@
     width: 75%;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 2rem;
 }
 .profile img {
     width: 100px;
@@ -98,11 +106,90 @@
 }
 
 .skills {
-    width: 75%;
+    width: 35%;
     margin: 0 auto;
+    padding: 2rem 0 2rem 0; /*top right bottom left*/
 }
 
 .skills img {
     width: 150px;
     
+}
+
+.skills-row {
+    width: 75%;
+    margin: 2rem auto 5rem auto;
+}
+
+.skills-image1 {
+    float: left;
+    margin-right: 2rem;
+}
+
+.skills-image2 {
+    float: right;
+    margin-left: 2rem;
+}
+
+.contact-me {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bottom-container {
+    background-color: var(--background-color);
+    height: 10vh;
+    text-align: center;
+    color: rgb(26, 42, 221);
+    padding-top: 1rem;
+}
+
+.skills-header {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    color: rgb(22, 22, 21);
+    text-decoration: none;
+    border: 2px solid rgb(236, 123, 212);
+    padding: 1rem;
+    margin: 2rem;
+    opacity: 0;
+    animation-name: btn;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 3s;
+
+}
+
+.btn:hover {
+    transform: rotateY(180deg);
+}
+
+@keyframes  btn {
+    0% {opacity:0;}
+    100% {opacity: 1;}
+}
+
+.bottom-container {
+    margin: 2rem 0;
+}
+
+.bottom-container a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    transform: 0.4s;
+}
+
+.bottom-container :hover {
+    background-color: #bae415;
+    color: #fff;
+    border-radius: 50%;
 }
